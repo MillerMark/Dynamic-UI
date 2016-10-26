@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Container Key="942383484">
+    <Sessions>
+      <Item Id="MainSession">
+        <Filter Type="DevExpress.CodeRush.TestRunner.Data.Filters.TestFilterAnd" Assembly="DevExpress.CodeRush.TestRunner.Data, Version=16.1.8.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4">
+          <Filter Type="DevExpress.CodeRush.TestRunner.Data.Filters.TestFilterOr" Assembly="DevExpress.CodeRush.TestRunner.Data, Version=16.1.8.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4" />
+          <Filter Type="DevExpress.CodeRush.TestRunner.Data.Filters.TestFilterNot" Assembly="DevExpress.CodeRush.TestRunner.Data, Version=16.1.8.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4">
+            <Filter Type="DevExpress.CodeRush.TestRunner.Data.Filters.TestFilterAnd" Assembly="DevExpress.CodeRush.TestRunner.Data, Version=16.1.8.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4" />
+          </Filter>
+        </Filter>
+        <SessionName>Main</SessionName>
+      </Item>
+    </Sessions>
+    <ActiveSessionName>Main</ActiveSessionName>
+  </Container>
+  <Container Key="-1592402827">
+    <Items>
+      <Item Id="{440ba757-df42-4920-bcab-9cbe0a64e864}">
+        <Id>2</Id>
+        <File>..\Core\Core\IDynamicControl.cs</File>
+        <Line>9</Line>
+        <Character>33</Character>
+      </Item>
+      <Item Id="{67e5fb2b-d719-4057-bc80-aa2cce400a1e}">
+        <Id>3</Id>
+        <File>..\Core\Core\Blueprint.cs</File>
+        <Line>10</Line>
+        <Character>18</Character>
+      </Item>
+      <Item Id="{c3806fdd-4a41-46b1-be6b-ef211e579455}">
+        <Id>4</Id>
+        <File>..\Core\UI Attribute\UIAttribute.cs</File>
+        <Line>6</Line>
+        <Character>17</Character>
+      </Item>
+      <Item Id="{b0aaf0f4-0dd6-481e-af0b-1c2fcdf96ae9}">
+        <Id>5</Id>
+        <File>..\Contract\AssemblyLineControl.cs</File>
+        <Line>8</Line>
+        <Character>42</Character>
+      </Item>
+      <Item Id="{f65985b8-dfe1-4870-946d-c69f0e593ddc}">
+        <Id>1</Id>
+        <File>DynamicWPF\Engine\DynamicEngine.cs</File>
+        <Line>15</Line>
+        <Character>40</Character>
+      </Item>
+      <Item Id="{55dfe71a-1d75-4d8c-9fb9-2da1bad470b9}">
+        <Id>6</Id>
+        <File>DynamicUI\MainWindow.xaml.cs</File>
+        <Line>65</Line>
+        <Character>15</Character>
+      </Item>
+    </Items>
+  </Container>
+</Containers>

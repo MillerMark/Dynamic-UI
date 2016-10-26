@@ -1,0 +1,44 @@
+﻿<Window x:Class="DynamicUIDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DynamicUIDemo"
+        mc:Ignorable="d"
+        Title="Dynamic UI" Height="720" Width="691" Background="AliceBlue">
+	<DockPanel x:Name="spMain">
+		<StackPanel Margin="4">
+			<TextBlock Text="Controllers:" Width="Auto" Height="Auto" Margin="4"/>
+			<ListBox x:Name="lstParts" MouseDoubleClick="lstControllers_MouseDoubleClick" Background="AliceBlue">
+			</ListBox>
+		</StackPanel>
+		<StackPanel Margin="4">
+			<TextBlock Text="Assembly Line:" Width="Auto" Height="Auto" Margin="4"/>
+			<ListView x:Name="lvAssemblyLine" SelectionChanged="lvAssemblyLine_SelectionChanged" Background="AliceBlue">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<WrapPanel>
+							<TextBlock Text="{Binding Name}" FontWeight="Bold" />
+						</WrapPanel>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+		</StackPanel>
+
+		<StackPanel Margin="4,3,4,13" MinWidth="200">
+			<TextBlock Text="Properties:" Width="Auto" Height="Auto" Margin="4"/>
+			<Border BorderBrush="#FF5FAFF5" BorderThickness="1" Background="White" Padding="0,0,4,4">
+				<StackPanel x:Name="spDynamicUI" Background="White">
+			</StackPanel>
+				</Border>
+		</StackPanel>
+
+		<StackPanel Margin="4,4,4,12" MinWidth="200">
+			<TextBlock Text="Product Build Preview:" Width="Auto" Height="Auto" Margin="4"/>
+			<ScrollViewer Height="Auto" Width="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+				<Canvas x:Name="cvsSample" Margin="12">
+				</Canvas>
+			</ScrollViewer>
+		</StackPanel>
+	</DockPanel>
+</Window>
